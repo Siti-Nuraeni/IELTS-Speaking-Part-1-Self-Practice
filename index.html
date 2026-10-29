@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IELTS Speaking Part 1 — Practice Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5F7; --sheet:#FFFFFF; --ink:#1B2A3A; --muted:#5A6878; --rule:#D3DCE3;
+  --accent:#2F5D8A; --accent-ink:#FFFFFF; --hl:#FBE27A; --hl-ink:#1B2A3A;
+  --good:#2E7D5B; --warn:#B7791F; --bad:#B6452C; --soft:#E6EDF2;
+  --serif:"Literata", Georgia, "Times New Roman", serif;
+  --sans:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121A21; --sheet:#1A242D; --ink:#E4EBF0; --muted:#9AAAB8; --rule:#2C3A46;
+    --accent:#7FB0DD; --accent-ink:#0E1820; --hl:#5C4C12; --hl-ink:#FFF4C9;
+    --good:#6CC79C; --warn:#E3B45C; --bad:#EE8C74; --soft:#22303B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121A21; --sheet:#1A242D; --ink:#E4EBF0; --muted:#9AAAB8; --rule:#2C3A46;
+  --accent:#7FB0DD; --accent-ink:#0E1820; --hl:#5C4C12; --hl-ink:#FFF4C9;
+  --good:#6CC79C; --warn:#E3B45C; --bad:#EE8C74; --soft:#22303B; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sheet)}
+a{color:var(--accent)}
+button,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sheet);border-bottom:1px solid var(--rule)}
+.top-inner{max-width:1080px;margin:0 auto;padding:.6rem 1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.1rem;text-decoration:none;color:var(--ink);margin-right:auto}
+nav.tabs{display:flex;gap:.25rem;overflow-x:auto}
+nav.tabs a{text-decoration:none;color:var(--muted);padding:.45rem .8rem;border-radius:999px;white-space:nowrap;font-weight:700;font-size:.95rem}
+nav.tabs a[aria-current="page"]{background:var(--soft);color:var(--ink)}
+
+main{max-width:1080px;margin:0 auto;padding:1.5rem 1rem 4rem}
+.view{display:none}
+.view.on{display:block}
+
+/* Hero */
+.hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--rule)}
+.hero .who{font-size:.95rem;color:var(--muted);margin:0 0 .6rem}
+.hero blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.8rem,4.6vw,3.1rem);line-height:1.15;font-weight:600;max-width:22ch;min-height:2.3em}
+.hero .lead{max-width:60ch;color:var(--muted);margin:1.2rem 0 1.4rem}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--rule);background:var(--sheet);padding:.6rem 1rem;border-radius:10px;cursor:pointer;font-weight:700;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:.4rem}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{padding:.35rem .7rem;font-size:.9rem;border-radius:8px}
+.btn.rec{border-color:var(--bad);color:var(--bad)}
+.btn.rec.live{background:var(--bad);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+h2{font-family:var(--serif);font-size:1.7rem;line-height:1.2;margin:2.2rem 0 .6rem}
+h3{font-family:var(--serif);font-size:1.25rem;margin:1.6rem 0 .4rem}
+p.note{color:var(--muted);max-width:65ch}
+
+/* Guide */
+.formula{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--rule);border-radius:12px;background:var(--sheet);overflow:hidden;margin:1rem 0}
+.formula div{padding:1rem 1.1rem;border-right:1px solid var(--rule)}
+.formula div:last-child{border-right:0}
+.formula strong{display:block;font-family:var(--serif);font-size:1.15rem}
+.formula span{color:var(--muted);font-size:.95rem}
+.example{background:var(--sheet);border-left:4px solid var(--accent);padding:1rem 1.2rem;border-radius:0 10px 10px 0;max-width:72ch;font-family:var(--serif);line-height:1.7}
+.example em{font-style:normal;font-family:var(--sans);font-size:.8rem;font-weight:700;color:var(--accent);background:var(--soft);padding:.05rem .4rem;border-radius:4px;margin-left:.2rem}
+.tablewrap{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;min-width:560px;width:100%;background:var(--sheet);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--rule);vertical-align:top;font-size:.95rem}
+th{font-family:var(--serif);background:var(--soft)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.two ul{margin:.3rem 0;padding-left:1.2rem}
+.two li{margin:.35rem 0}
+
+/* Book */
+.book{display:grid;grid-template-columns:220px minmax(0,1fr);gap:2rem;align-items:start}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}
+.toc ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--rule)}
+.toc a{display:block;padding:.3rem .8rem;text-decoration:none;color:var(--muted);font-size:.95rem;margin-left:-2px;border-left:2px solid transparent}
+.toc a:hover{color:var(--ink);border-left-color:var(--accent)}
+.toc .count{float:right;font-size:.8rem}
+.toolbar{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:.7rem 1rem;margin-bottom:1rem}
+.toolbar label{display:flex;gap:.4rem;align-items:center;cursor:pointer;font-size:.95rem}
+.topic{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:1.3rem 1.4rem;margin-bottom:1.4rem}
+.topic header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:.6rem;margin-bottom:.4rem}
+.topic h3{margin:0;font-size:1.45rem}
+.topic .chapter{color:var(--muted);font-size:.9rem}
+.qa{padding:1rem 0;border-bottom:1px dashed var(--rule)}
+.qa:last-of-type{border-bottom:0}
+.q{font-family:var(--serif);font-weight:600;font-size:1.12rem;margin:0 0 .5rem}
+.a{font-family:var(--serif);line-height:1.75;max-width:70ch;margin:.6rem 0 0;display:none}
+.a.open{display:block}
+body.show-all .a{display:block}
+body.show-all .reveal{display:none}
+mark{background:var(--hl);color:var(--hl-ink);padding:0 .15em;border-radius:3px}
+body.no-hl mark{background:none;color:inherit;padding:0}
+.tip{background:var(--soft);border-radius:10px;padding:.8rem 1rem;font-size:.95rem;margin-top:.8rem}
+.tip b{font-family:var(--serif)}
+.qa .row{gap:.4rem}
+.done-badge{font-size:.8rem;color:var(--good);font-weight:700}
+
+/* Mock */
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:1.4rem}
+.exam{max-width:760px;margin:0 auto}
+.exam .topicline{color:var(--muted);margin:0 0 .4rem}
+.exam .bigq{font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2.2rem);line-height:1.25;font-weight:600;margin:.2rem 0 1.2rem;min-height:2.5em}
+.progressline{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:1.2rem}
+.progressline span{display:block;height:100%;background:var(--accent);transition:width .3s}
+.timer{font-variant-numeric:tabular-nums;font-size:2.4rem;font-weight:700;font-family:var(--serif)}
+.timebar{position:relative;height:12px;border-radius:999px;background:var(--soft);overflow:hidden;margin:.4rem 0 .3rem}
+.timebar .zone{position:absolute;top:0;bottom:0;left:50%;width:37.5%;background:color-mix(in srgb,var(--good) 28%,transparent)}
+.timebar .fill{position:absolute;top:0;bottom:0;left:0;width:0;background:var(--accent);opacity:.85}
+.timehint{font-size:.9rem;color:var(--muted);min-height:1.4em}
+.status{font-size:.9rem;color:var(--muted);margin-top:.6rem;min-height:1.3em}
+.review .item{border-top:1px solid var(--rule);padding:1rem 0}
+.review .meta{font-size:.85rem;color:var(--muted)}
+.setup label{display:flex;gap:.5rem;align-items:center;margin:.4rem 0;cursor:pointer}
+
+/* Practice */
+.practice{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:1.4rem;align-items:start}
+textarea{width:100%;min-height:150px;border:1px solid var(--rule);border-radius:10px;padding:.8rem;background:var(--paper);resize:vertical;font-family:var(--serif);line-height:1.6}
+select{border:1px solid var(--rule);border-radius:8px;padding:.45rem .6rem;background:var(--sheet)}
+.feedback{font-size:.92rem;margin-top:.6rem}
+.feedback .chip{display:inline-block;background:var(--soft);border-radius:999px;padding:.1rem .55rem;margin:.15rem .2rem 0 0;font-size:.85rem}
+.check label{display:flex;gap:.55rem;align-items:flex-start;margin:.5rem 0;cursor:pointer;font-size:.95rem}
+.check input{margin-top:.3rem}
+.score{font-family:var(--serif);font-size:1.1rem;margin-top:.6rem}
+.bars .b{margin:.45rem 0;font-size:.9rem}
+.bars .track{height:7px;background:var(--soft);border-radius:999px;overflow:hidden;margin-top:.2rem}
+.bars .track span{display:block;height:100%;background:var(--good)}
+audio{width:100%;margin-top:.6rem}
+.side h3{margin-top:0}
+.side .panel+.panel{margin-top:1.2rem}
+
+.desc-table td{min-width:200px;font-size:.88rem;line-height:1.45}
+.desc-table td:first-child{min-width:0;font-family:var(--serif);font-weight:700;font-size:1.3rem;text-align:center;background:var(--soft)}
+details summary{cursor:pointer;color:var(--accent);font-weight:700}
+.report{margin-top:1.2rem;border-top:2px solid var(--ink);padding-top:1rem}
+.overall{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.overall .big{font-family:var(--serif);font-size:3.2rem;font-weight:700;line-height:1}
+.overall .lbl{color:var(--muted)}
+.crit{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--rule)}
+.crit .band{font-family:var(--serif);font-size:1.6rem;font-weight:700;text-align:center;background:var(--soft);border-radius:10px;padding:.3rem 0;align-self:start}
+.crit h4{margin:0 0 .2rem;font-size:1rem}
+.crit p{margin:.2rem 0;font-size:.95rem}
+.crit .ev{font-family:var(--serif);font-style:italic;color:var(--muted)}
+.crit details{font-size:.88rem;margin-top:.3rem}
+.crit details p{color:var(--muted)}
+.report ul{padding-left:1.2rem;margin:.3rem 0}
+.report li{margin:.3rem 0;font-size:.95rem}
+.fix{font-size:.93rem;margin:.3rem 0}
+.fix s{color:var(--bad)}
+.fix b{color:var(--good)}
+.caveat{font-size:.85rem;color:var(--muted);background:var(--soft);border-radius:8px;padding:.6rem .8rem;margin-top:1rem}
+.grading{display:flex;gap:.6rem;align-items:center;color:var(--muted);margin-top:1rem}
+.spin{width:16px;height:16px;border:2px solid var(--rule);border-top-color:var(--accent);border-radius:50%;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.live-tr{font-family:var(--serif);color:var(--muted);font-style:italic;min-height:1.4em;margin-top:.4rem}
+.review textarea{min-height:90px;margin-top:.4rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:2rem 1rem}
+
+@media (max-width:820px){
+  .book{grid-template-columns:1fr}
+  .toc{position:static}
+  .toc ol{display:flex;gap:.3rem;overflow-x:auto;border-left:0;padding-bottom:.3rem}
+  .toc a{border:1px solid var(--rule);border-radius:999px;white-space:nowrap;margin:0}
+  .toc .count{display:none}
+  .practice{grid-template-columns:1fr}
+  .formula{grid-template-columns:1fr}
+  .formula div{border-right:0;border-bottom:1px solid var(--rule)}
+  .two{grid-template-columns:1fr}
+  .topic{padding:1.1rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#home">Speaking Part 1 Book</a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#home" data-v="home">Guide</a>
+      <a href="#book" data-v="book">Questions &amp; answers</a>
+      <a href="#mock" data-v="mock">Mock test</a>
+      <a href="#practice" data-v="practice">Self-practice</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HOME / GUIDE -->
+<section class="view" id="view-home">
+  <div class="hero">
+    <p class="who">The examiner asks:</p>
+    <blockquote id="heroQ">Let’s talk about your hometown. Where is your hometown?</blockquote>
+    <p class="lead">48 real-style Part 1 questions across 12 topics, each with a Band 7–8 model answer. Read the answers, sit a timed mock test, and practise on your own. Every spoken answer is transcribed and graded automatically against the official IELTS Speaking band descriptors.</p>
+    <div class="row">
+      <a class="btn primary" href="#mock">Start a mock test</a>
+      <a class="btn" href="#book">Read the questions &amp; answers</a>
+      <button class="btn" id="heroNext" type="button">Another question</button>
+    </div>
+  </div>
+
+  <h2>How Part 1 works</h2>
+  <p class="note">Part 1 lasts 4–5 minutes. The examiner checks your identity, then asks about familiar topics: first about your work, studies, hometown or home, then two other everyday topics. You don’t get preparation time, and the examiner won’t comment on your answers.</p>
+
+  <h2>The answer formula</h2>
+  <p class="note">Aim for 2–4 sentences (about 20–30 seconds). Too short sounds limited; too long sounds rehearsed.</p>
+  <div class="formula">
+    <div><strong>Answer</strong><span>Reply directly in the first sentence. No “That’s a good question”.</span></div>
+    <div><strong>Reason</strong><span>Say why, using a linker: because, since, mainly for…</span></div>
+    <div><strong>Detail</strong><span>Add an example, a contrast, or a past/future comparison.</span></div>
+  </div>
+  <div class="example">
+    <p style="margin:0 0 .6rem"><b>Do you prefer printed books or e-books?</b></p>
+    I’m a bit old-fashioned in that respect — I prefer printed books.<em>Answer</em>
+    I like the feel of turning the pages, and staring at a screen all day already strains my eyes.<em>Reason</em>
+    Still, e-books are handy when I’m travelling, since I can carry dozens at once.<em>Detail</em>
+  </div>
+
+  <h2>The band descriptors used for grading</h2>
+  <p class="note">Examiners score four criteria equally. Your answers in this book are graded against these official descriptors. Each criterion gets a whole band, and the overall score is their average, rounded to the nearest half band.</p>
+  <div class="tablewrap"><table class="desc-table" id="descTable"></table></div>
+  <details style="margin:.4rem 0 1rem"><summary>Show bands 3 to 0</summary><div class="tablewrap"><table class="desc-table" id="descTableLow"></table></div></details>
+  <p class="note">Notes from the descriptors: a candidate must fully fit the positive features of the descriptor at a particular level, and the real test rates average performance across all three parts. A Part 1 grade here is an estimate of your level, not an official score.</p>
+
+  <div class="two">
+    <div>
+      <h3>Do</h3>
+      <ul>
+        <li>Use the highlighted phrases in the model answers, but only the ones that fit you.</li>
+        <li>Mix tenses: present for habits, past for comparisons, “would / I’d like to” for the future.</li>
+        <li>Buy time naturally: “Hmm, I’d say…”, “To be honest…”, “That’s something I’ve never really thought about, but…”.</li>
+        <li>Be honest. You can change details, but personal answers sound more natural.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Avoid</h3>
+      <ul>
+        <li>One-word answers like “Yes” or “Not really” with nothing after them.</li>
+        <li>Memorised speeches. Examiners notice, and it can lower your fluency score.</li>
+        <li>Repeating the question word for word at the start of every answer.</li>
+        <li>Forcing idioms that don’t fit (“It’s raining cats and dogs” is a classic giveaway).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="view" id="view-book">
+  <h2 style="margin-top:0">Questions &amp; model answers</h2>
+  <p class="note">Try answering aloud first, then reveal the model. Highlighted phrases are the Band 7–8 language worth borrowing.</p>
+  <div class="book">
+    <aside class="toc" aria-label="Topics"><ol id="toc"></ol></aside>
+    <div>
+      <div class="toolbar">
+        <label><input type="checkbox" id="showAll"> Show all answers</label>
+        <label><input type="checkbox" id="showHl" checked> Highlight key language</label>
+        <button class="btn small" type="button" id="readMode">Hear a question</button>
+      </div>
+      <div id="bookBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOCK -->
+<section class="view" id="view-mock">
+  <div class="exam">
+    <div id="mockSetup" class="panel setup">
+      <h2 style="margin-top:0">Mock test</h2>
+      <p class="note">A full Part 1 in exam order: one topic about you, then two everyday topics, 11–12 questions in total. Answer each question aloud, then move on. You’ll see the model answers at the end.</p>
+      <label><input type="checkbox" id="optSpeak" checked> Read questions aloud (examiner voice)</label>
+      <label><input type="checkbox" id="optTr" checked> Transcribe my answers so they can be graded (uses the microphone)</label>
+      <label><input type="checkbox" id="optRec"> Also keep an audio recording to listen back</label>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="mockStart">Start the test</button>
+      </div>
+    </div>
+
+    <div id="mockRun" class="panel" hidden>
+      <div class="progressline"><span id="mockBar" style="width:0"></span></div>
+      <p class="topicline" id="mockTopic"></p>
+      <p class="bigq" id="mockQ"></p>
+      <div class="timer" id="mockTime">0:00</div>
+      <div class="timebar"><div class="zone"></div><div class="fill" id="mockFill"></div></div>
+      <div class="timehint" id="mockHint">Aim for 20–35 seconds.</div>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn" type="button" id="mockRepeat">Repeat question</button>
+        <button class="btn primary" type="button" id="mockNext">Next question</button>
+        <button class="btn" type="button" id="mockEnd">End test</button>
+      </div>
+      <p class="live-tr" id="mockLive"></p>
+      <div class="status" id="mockStatus"></div>
+    </div>
+
+    <div id="mockReview" class="panel review" hidden>
+      <h2 style="margin-top:0">Your mock test review</h2>
+      <p class="note" id="mockSummary"></p>
+      <div id="mockAudio"></div>
+      <div class="row"><button class="btn primary" type="button" id="mockGrade">Grade my test</button></div>
+      <div id="mockReport"></div>
+      <h3>Your answers and the model answers</h3>
+      <p class="note">Check the transcripts before grading. Fix any words the speech recognition got wrong, or type an answer it missed.</p>
+      <div id="mockItems"></div>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="mockAgain">Take another test</button>
+        <a class="btn" href="#practice">Go to self-practice</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="view" id="view-practice">
+  <h2 style="margin-top:0">Self-practice</h2>
+  <p class="note">Pick a question, answer it aloud with the timer running, then draft or check your answer and assess yourself honestly. Your notes and progress stay in this browser.</p>
+  <div class="practice">
+    <div class="panel">
+      <div class="row" style="justify-content:space-between">
+        <label class="row" style="gap:.4rem">Topic
+          <select id="pTopic"></select>
+        </label>
+        <button class="btn" type="button" id="pNew">New question</button>
+      </div>
+      <p class="topicline" id="pTopicLine" style="color:var(--muted);margin:1.2rem 0 .2rem"></p>
+      <p class="bigq" id="pQ" style="font-family:var(--serif);font-size:1.6rem;font-weight:600;line-height:1.3;margin:0 0 1rem"></p>
+
+      <div class="row">
+        <button class="btn" type="button" id="pListen">Hear the question</button>
+        <button class="btn primary" type="button" id="pSpeak">Start answering</button>
+      </div>
+      <div class="timer" id="pTime" style="margin-top:.8rem">0:00</div>
+      <div class="timebar"><div class="zone"></div><div class="fill" id="pFill"></div></div>
+      <div class="timehint" id="pHint">Aim for 20–35 seconds.</div>
+      <p class="live-tr" id="pLive"></p>
+      <div id="pAudio"></div>
+      <div class="status" id="pStatus"></div>
+
+      <h3>Your answer</h3>
+      <textarea id="pDraft" placeholder="Your spoken answer appears here as a transcript. Fix any recognition mistakes, or type your answer if the microphone isn’t available."></textarea>
+      <div class="feedback" id="pFeedback"></div>
+
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="pGrade">Grade my answer</button>
+        <button class="btn" type="button" id="pModel">Compare with model answer</button>
+        <button class="btn" type="button" id="pDone">Mark as practised</button>
+      </div>
+      <div id="pReport"></div>
+      <div class="a" id="pModelText" style="margin-top:1rem"></div>
+    </div>
+
+    <div class="side">
+      <div class="panel check">
+        <h3>Self-check</h3>
+        <p class="note" style="margin:.2rem 0 .4rem;font-size:.9rem">Tick what was true of your spoken answer.</p>
+        <label><input type="checkbox" data-c> I answered the question directly in my first sentence.</label>
+        <label><input type="checkbox" data-c> I gave a reason or an example.</label>
+        <label><input type="checkbox" data-c> I spoke for 20–35 seconds without long pauses.</label>
+        <label><input type="checkbox" data-c> I used at least one linker (although, whereas, that said…).</label>
+        <label><input type="checkbox" data-c> I used one less common word or natural idiom.</label>
+        <label><input type="checkbox" data-c> I used more than one tense or a complex sentence.</label>
+        <label><input type="checkbox" data-c> I didn’t repeat the question’s words exactly.</label>
+        <label><input type="checkbox" data-c> I sounded natural, not memorised.</label>
+        <div class="score" id="pScore">Tick the boxes to see your estimate.</div>
+      </div>
+      <div class="panel">
+        <h3>Your progress</h3>
+        <p id="pTotal" style="margin:.2rem 0"></p>
+        <div class="bars" id="pBars"></div>
+        <button class="btn small" type="button" id="pReset" style="margin-top:.8rem">Reset progress</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Model answers are written to show Band 7–8 features. Automatic grades are estimates based on the IELTS Speaking band descriptors, not official scores.</footer>
+
+<script>
+const TOPICS = [
+ {id:"work", title:"Work or studies", intro:true, tip:"The examiner almost always starts here. Keep it personal and add one detail about the future to show you can use different tenses.", qs:[
+  ["Do you work or are you a student?","I'm currently a full-time student — I'm in my third year of a business management degree. It's fairly demanding, to be honest, but I chose it because I've always been [[drawn to the idea of]] running my own company one day."],
+  ["Why did you choose that subject?","Mainly for practical reasons. Business is [[a versatile degree]], so it [[keeps my options open]] if I change my mind about my career. That said, there was a personal side too — my parents run a small bakery, and [[growing up around]] it made me curious about how businesses actually survive."],
+  ["What do you like most about your studies?","I'd say the case studies. Rather than just memorising theory, we analyse real companies and [[figure out where they went wrong]], which I find much more [[engaging]]. It also forces you to [[think on your feet]], because lecturers often put you on the spot in discussions."],
+  ["Do you plan to continue studying in the future?","Yes, [[if all goes to plan]] I'd like to do a master's abroad. I think [[gaining international exposure]] would make me far more competitive in the job market, although I'd probably work for a couple of years first to [[save up]] and get some practical experience."]]},
+ {id:"hometown", title:"Hometown", intro:true, tip:"Describe, then evaluate. A contrast (“It's good for the economy, but…”) shows you can give a balanced view.", qs:[
+  ["Where is your hometown?","I come from a medium-sized coastal town in the east of my country. It's not particularly well known, but it's [[famous locally for]] its seafood, so if you visit, you'll [[smell the sea before you see it]]."],
+  ["What do you like about your hometown?","Definitely the [[laid-back pace of life]]. People aren't constantly rushing around like in big cities, and [[neighbours genuinely look out for each other]]. Whenever I go back, I feel [[a real sense of belonging]] that I don't really get anywhere else."],
+  ["Is there anything you would like to change about it?","If I could change one thing, it would be the public transport. Buses are [[few and far between]], so almost everyone depends on motorbikes, which means the roads get [[pretty congested]] at rush hour. A reliable bus network would [[make a world of difference]]."],
+  ["Has your hometown changed much in recent years?","Quite a lot, actually. A few years ago a new highway was built, and since then tourism has [[taken off]]. There are cafés and guesthouses [[springing up]] everywhere. It's good for the economy, but some older residents feel the town is [[losing its character]]."]]},
+ {id:"home", title:"Home and accommodation", intro:true, tip:"Use the second conditional (“If I had the budget, I'd…”) for questions about changes. It's an easy way to show grammatical range.", qs:[
+  ["Do you live in a house or an apartment?","I live in a fairly [[compact]] apartment on the eighth floor of a block near the city centre. It's not huge, but it's [[conveniently located]] — I can walk to the train station in about five minutes, which saves me a lot of time."],
+  ["Which room do you like most in your home?","Probably the living room, because it gets [[plenty of natural light]] in the mornings. I've set up a small desk by the window, so it [[doubles as]] my study space. It's where I spend most of my time [[unwinding]] as well."],
+  ["What would you like to change about your home?","Honestly, I'd love a bit more storage. [[As it stands]], things tend to [[pile up]] quite quickly and the place can feel cluttered. If I had the budget, I'd [[install built-in wardrobes]] to free up some floor space."],
+  ["Do you plan to live there for a long time?","Probably not. It [[suits my needs]] for now, but in the long run I'd like somewhere with a garden, ideally a bit further from the city. [[I can picture myself]] moving somewhere quieter once I've settled into a stable job."]]},
+ {id:"routine", title:"Daily routine", tip:"Routine questions invite simple present tense. Lift your answer by adding a past comparison or a “whereas” contrast.", qs:[
+  ["What is your daily routine like?","On weekdays it's fairly [[predictable]]. I'm up at around six, I [[grab a quick breakfast]], and then I head to campus. Afternoons are usually taken up with lectures or group work, and in the evenings I try to [[squeeze in]] a workout before dinner."],
+  ["Are you a morning person or an evening person?","I'd definitely describe myself as a morning person. My mind is much sharper early in the day, so I [[tackle]] the most demanding tasks first. By about nine at night I'm [[running on empty]], so I rarely stay up late."],
+  ["Do you prefer to keep the same routine or change it?","On the whole, I prefer [[sticking to a routine]] because it helps me stay productive. Having said that, if things become too repetitive I start to feel a bit [[stuck in a rut]], so at weekends I deliberately [[mix things up]]."],
+  ["Has your routine changed compared with when you were a child?","Enormously. As a child, my day was [[structured for me]] by school and my parents. Now I have to [[manage my own time]], which is liberating but also challenging, especially when several deadlines [[fall in the same week]]."]]},
+ {id:"weather", title:"Weather", tip:"Avoid “It's raining cats and dogs”. Examiners hear it constantly. Precise collocations like “torrential downpours” score better.", qs:[
+  ["What's the weather like where you live?","It's tropical, so it's hot and humid [[pretty much all year round]]. We really only have two seasons — the dry season and the rainy season. During the rainy months, you can get [[torrential downpours]] almost every afternoon."],
+  ["What kind of weather do you like most?","I'm a big fan of cool, [[overcast days]], which is ironic considering where I live. There's something [[refreshing]] about a light breeze and grey skies — it makes me want to [[curl up with a book]] and a hot drink."],
+  ["Does the weather affect your mood?","[[To some extent]], yes. Long stretches of rain can make me feel a bit [[sluggish]] and unmotivated, whereas a bright, clear morning [[instantly lifts my spirits]]. I think most people are more affected by the weather than they'd like to admit."],
+  ["Do you often check the weather forecast?","Almost every morning, mainly so I know whether to bring an umbrella. I ride a motorbike, so [[getting caught in the rain]] is a real nuisance. That said, forecasts here aren't always [[spot-on]], so I [[take them with a pinch of salt]]."]]},
+ {id:"music", title:"Music", tip:"“It depends” is a great opener for preference questions, as long as you then explain both sides.", qs:[
+  ["What kind of music do you like?","I have quite [[eclectic taste]], to be honest. I listen to a lot of indie pop, but I'm also into jazz, especially when I'm studying, because instrumental music helps me [[concentrate without getting distracted]] by lyrics."],
+  ["How often do you listen to music?","[[Practically all the time]]. I have my earphones in on my commute, while I'm working out and even when I'm cooking. I'd find it hard to [[get through the day]] without some kind of soundtrack in the background."],
+  ["Did you learn to play an instrument as a child?","I did — my parents [[signed me up for]] piano lessons when I was about eight. I wasn't very [[committed]], though, and I [[gave it up]] after a couple of years. Looking back, I [[regret not sticking with it]]."],
+  ["Do you prefer live music or recorded music?","It depends on the situation. Recorded music is far more convenient for everyday life, but nothing [[beats the atmosphere]] of a live concert. Being in a crowd where everyone knows the words gives you [[a real buzz]] that you just can't replicate at home."]]},
+ {id:"reading", title:"Reading", tip:"For opinion questions about society (“Do people read less?”), give a nuanced view rather than a simple yes or no.", qs:[
+  ["Do you like reading?","Yes, I'm [[an avid reader]], although I don't get as much time for it as I used to. I mostly read fiction, particularly crime novels, because I love trying to [[work out who did it]] before the final chapter."],
+  ["Do you prefer printed books or e-books?","I'm a bit [[old-fashioned]] in that respect — I prefer printed books. I like the feel of turning the pages, and staring at a screen all day already [[strains my eyes]]. Still, e-books are [[handy]] when I'm travelling, since I can carry dozens at once."],
+  ["What did you read when you were a child?","Mostly comic books and adventure stories. I was [[hooked on]] a series about a group of kids solving mysteries, and I [[used to]] read under the covers with a torch [[long after]] I was supposed to be asleep."],
+  ["Do you think people read less nowadays?","[[In terms of]] books, probably yes, because social media competes for our attention. But I'd argue people actually read more than ever overall — it's just in [[bite-sized]] formats like articles, posts and messages rather than long novels."]]},
+ {id:"phones", title:"Mobile phones", tip:"Technology questions are common. Show balance with “In theory… but in practice…” structures.", qs:[
+  ["How often do you use your mobile phone?","[[Far more than I should]], honestly. It's the first thing I check when I wake up and the last thing I look at before bed. I use it for everything from banking to studying, so it's become [[an extension of myself]] in a way."],
+  ["What do you mainly use your phone for?","Apart from messaging, I mainly use it for [[keeping up with]] the news and listening to podcasts. I also rely on it heavily for navigation — I have a [[terrible sense of direction]], so without maps I'd be completely lost."],
+  ["Could you live without your phone?","[[In theory]], yes, but it would be a struggle. So much of daily life — paying for things, booking transport, contacting people — now [[revolves around]] smartphones. I did try a phone-free weekend once, and it was surprisingly [[liberating]], but I wouldn't want to do it permanently."],
+  ["Do you think children should have mobile phones?","I think it depends on their age. For teenagers, a phone can be useful for safety, so parents can [[stay in touch]]. For young children, though, I'd be more cautious, because too much screen time can [[take a toll on]] their attention span and sleep."]]},
+ {id:"food", title:"Food and cooking", tip:"Connect food to memories or people. Personal detail makes answers vivid and easy to extend.", qs:[
+  ["What's your favourite food?","It would have to be my grandmother's chicken curry. It's rich and [[full of flavour]], and she makes it every time the family gets together, so it's tied to a lot of [[fond memories]]. No restaurant version has ever [[come close]]."],
+  ["Do you enjoy cooking?","I do, although I'm by no means an expert. I find it [[therapeutic]] after a long day. I usually stick to simple dishes like stir-fries, but at weekends I like to [[experiment with]] new recipes I've found online — with [[mixed results]]!"],
+  ["Do you prefer eating at home or eating out?","During the week I tend to eat at home because it's healthier and [[easier on the wallet]]. Eating out is more of [[a treat]] for me — something I do at weekends or to celebrate special occasions with friends."],
+  ["Is there any food you dislike?","I'm not particularly [[fussy]], but I [[can't stand]] very bitter vegetables like bitter melon. I've tried [[acquiring a taste for]] it because it's supposed to be very healthy, but I just can't [[get past]] the flavour."]]},
+ {id:"travel", title:"Travel and holidays", tip:"A past-tense story question (“Where did you go…?”) needs accurate past forms. Check your verb endings.", qs:[
+  ["Do you like travelling?","Absolutely. I think travelling [[broadens your horizons]] like nothing else. Even short trips get me [[out of my comfort zone]] and expose me to different ways of life, which I find really [[eye-opening]]."],
+  ["Where did you go on your last holiday?","I went to a mountain area a few hours from where I live with a couple of friends. We [[spent most of our time]] hiking and visiting tea plantations. It was [[just what I needed]] after a stressful exam period."],
+  ["Do you prefer travelling alone or with others?","I'd say with others, generally. Sharing the experience makes it more memorable, and it's [[reassuring]] to have someone around if anything goes wrong. That said, I'd like to try [[solo travel]] at some point, just to see how [[independent]] I can be."],
+  ["Where would you like to travel in the future?","Japan has been [[at the top of my bucket list]] for years. I'm fascinated by the way it [[blends]] ultra-modern cities with ancient traditions, and I'd love to see the cherry blossoms in spring, [[provided]] I can save up enough money."]]},
+ {id:"friends", title:"Friends", tip:"Phrasal verbs (keep in touch, catch up, drift apart) are natural and impressive here, used accurately.", qs:[
+  ["How often do you see your friends?","Not as often as I'd like. Since we all have busy schedules, we usually meet up once or twice a month. But we [[keep in touch]] through a group chat almost every day, so it never feels like we've [[drifted apart]]."],
+  ["What do you usually do with your friends?","Nothing too adventurous — we usually go for coffee or have dinner somewhere and just [[catch up]]. Occasionally we'll go to the cinema or play badminton, but honestly the [[conversation is the main event]]."],
+  ["Do you prefer having a few close friends or many friends?","Definitely a few close friends. I'm quite an introvert, so I'd rather have a small circle of people I can [[completely rely on]] than a large group I only know [[superficially]]. [[Quality over quantity]], as they say."],
+  ["Is it easy to make new friends as an adult?","Not really, in my experience. At school you're [[thrown together]] with people every day, but as an adult you have to [[make a conscious effort]]. Joining clubs or classes helps, but building [[genuine trust]] takes time."]]},
+ {id:"shopping", title:"Shopping", tip:"“Have you ever…?” questions need the present perfect first, then a past-simple story.", qs:[
+  ["Do you enjoy shopping?","It depends on what I'm buying. I find clothes shopping quite [[tedious]], to be honest, but I could spend hours in a bookshop or browsing electronics. I'm not really one for [[retail therapy]]."],
+  ["Do you prefer shopping online or in stores?","For everyday items, online shopping wins [[hands down]] because it's so convenient and you can compare prices easily. But for things like shoes, I prefer going in person, since you can't really [[judge the fit]] from a photo."],
+  ["Have you ever bought something you regretted?","Yes, plenty of times! The worst was an expensive gadget I bought [[on impulse]] during a flash sale. I used it twice and it's been [[gathering dust]] in a drawer ever since. Lesson learned — I now [[sleep on]] big purchases."],
+  ["Do you think people buy too many things nowadays?","[[Broadly speaking]], yes. Social media and constant advertising make us feel we need the latest products, and cheap online deals make it [[all too easy]] to overspend. I think more people are becoming aware of the environmental cost, though."]]}
+];
+
+const ALLQ = [];
+TOPICS.forEach(t => t.qs.forEach((qa,i) => ALLQ.push({tid:t.id, topic:t.title, i, id:t.id+"-"+i, q:qa[0].replace(/'/g,"’"), a:qa[1]})));
+const fmt = s => s.replace(/'/g,"’").replace(/\[\[(.+?)\]\]/g,"<mark>$1</mark>");
+const plain = s => s.replace(/'/g,"’").replace(/\[\[(.+?)\]\]/g,"$1");
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* storage */
+const KEY = "ielts-p1-book-v1";
+let store = {done:{}, notes:{}, grades:{}, mocks:[]};
+try { const raw = localStorage.getItem(KEY); if (raw) store = Object.assign(store, JSON.parse(raw)); } catch(e) {}
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } catch(e) {} }
+
+/* speech */
+function say(text){
+  try {
+    if (!("speechSynthesis" in window)) return false;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-GB"; u.rate = 0.95;
+    const v = speechSynthesis.getVoices().find(v => /en-GB/i.test(v.lang));
+    if (v) u.voice = v;
+    speechSynthesis.speak(u); return true;
+  } catch(e) { return false; }
+}
+
+/* recorder */
+function makeRecorder(){
+  let rec=null, stream=null, chunks=[];
+  return {
+    get live(){ return !!rec && rec.state === "recording"; },
+    async start(){
+      if (!navigator.mediaDevices || !window.MediaRecorder) throw new Error("unsupported");
+      stream = await navigator.mediaDevices.getUserMedia({audio:true});
+      chunks = []; rec = new MediaRecorder(stream);
+      rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+      rec.start();
+    },
+    stop(){
+      return new Promise(res => {
+        if (!rec) return res(null);
+        rec.onstop = () => {
+          stream.getTracks().forEach(t => t.stop());
+          const url = chunks.length ? URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || "audio/webm"})) : null;
+          rec = null; res(url);
+        };
+        rec.stop();
+      });
+    }
+  };
+}
+const REC_FAIL = "Recording isn’t available here (the microphone was blocked or isn’t supported). You can use your phone’s voice recorder instead.";
+
+/* timer */
+function makeTimer(timeEl, fillEl, hintEl){
+  let t0=0, h=null, sec=0;
+  function draw(){
+    sec = Math.floor((Date.now()-t0)/1000);
+    timeEl.textContent = Math.floor(sec/60)+":"+String(sec%60).padStart(2,"0");
+    fillEl.style.width = Math.min(100, sec/40*100)+"%";
+    hintEl.textContent = sec < 12 ? "Keep going: add a reason or example." :
+      sec < 20 ? "Nearly there. One more detail would help." :
+      sec <= 35 ? "Good length for Part 1." :
+      sec <= 45 ? "Start wrapping up." : "Too long for Part 1. The examiner would interrupt.";
+    hintEl.style.color = sec >= 20 && sec <= 35 ? "var(--good)" : sec > 45 ? "var(--bad)" : "var(--muted)";
+  }
+  return {
+    start(){ this.stop(); t0 = Date.now(); draw(); h = setInterval(draw, 250); },
+    stop(){ if (h) clearInterval(h); h=null; return sec; },
+    reset(){ this.stop(); sec=0; timeEl.textContent="0:00"; fillEl.style.width="0"; hintEl.textContent="Aim for 20–35 seconds."; hintEl.style.color="var(--muted)"; },
+    get running(){ return !!h; }
+  };
+}
+
+/* hero */
+let heroIdx = 4;
+function heroQ(){
+  const x = ALLQ[heroIdx];
+  $("heroQ").textContent = "Let’s talk about " + x.topic.toLowerCase().replace("work or studies","your work or studies").replace("hometown","your hometown") + ". " + x.q;
+}
+$("heroNext").onclick = () => { heroIdx = (heroIdx + 1 + Math.floor(Math.random()*(ALLQ.length-1))) % ALLQ.length; heroQ(); };
+heroQ();
+
+/* book */
+function renderBook(){
+  $("toc").innerHTML = TOPICS.map((t,i) => {
+    const d = t.qs.filter((_,j) => store.done[t.id+"-"+j]).length;
+    return `<li><a href="#book" data-topic="${t.id}">${t.title}<span class="count">${d}/4</span></a></li>`;
+  }).join("");
+  $("bookBody").innerHTML = TOPICS.map((t,i) => `
+    <article class="topic" id="t-${t.id}">
+      <header><h3>${t.title}</h3><span class="chapter">${t.intro ? "Opening topic" : "Everyday topic"}</span></header>
+      ${t.qs.map((qa,j) => {
+        const id = t.id+"-"+j;
+        return `<div class="qa">
+          <p class="q">${esc(qa[0].replace(/'/g,"’"))}</p>
+          <div class="row">
+            <button class="btn small reveal" type="button" data-reveal="${id}">Show model answer</button>
+            <button class="btn small" type="button" data-say="${id}">Hear it</button>
+            <button class="btn small" type="button" data-practise="${id}">Practise this</button>
+            ${store.done[id] ? '<span class="done-badge">Practised</span>' : ""}
+          </div>
+          <p class="a" id="a-${id}">${fmt(qa[1])}</p>
+        </div>`;}).join("")}
+      <div class="tip"><b>Band booster:</b> ${t.tip.replace(/'/g,"’")}</div>
+    </article>`).join("");
+}
+$("bookBody").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.reveal){
+    const a = $("a-"+b.dataset.reveal); a.classList.toggle("open");
+    b.textContent = a.classList.contains("open") ? "Hide model answer" : "Show model answer";
+  } else if (b.dataset.say){
+    const x = ALLQ.find(q => q.id === b.dataset.say); say(x.q);
+  } else if (b.dataset.practise){
+    pickPractice(b.dataset.practise); location.hash = "practice";
+  }
+});
+$("toc").addEventListener("click", e => {
+  const a = e.target.closest("a[data-topic]"); if (!a) return;
+  e.preventDefault();
+  document.getElementById("t-"+a.dataset.topic).scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+});
+$("showAll").onchange = e => document.body.classList.toggle("show-all", e.target.checked);
+$("showHl").onchange = e => document.body.classList.toggle("no-hl", !e.target.checked);
+$("readMode").onclick = () => { const x = ALLQ[Math.floor(Math.random()*ALLQ.length)]; if (!say(x.q)) alert(x.q); document.getElementById("a-"+x.id).closest(".qa").scrollIntoView({block:"center"}); };
+
+/* ---------- band descriptors (from the official IELTS Speaking descriptors) ---------- */
+const CRIT = [
+ {k:"fc", name:"Fluency and coherence"},
+ {k:"lr", name:"Lexical resource"},
+ {k:"gra", name:"Grammatical range and accuracy"},
+ {k:"pron", name:"Pronunciation"}
+];
+const DESC = {
+ fc:{9:"Fluent with only very occasional repetition or self-correction. Any hesitation that occurs is used only to prepare the content of the next utterance and not to find words or grammar. Speech is situationally appropriate and cohesive features are fully acceptable. Topic development is fully coherent and appropriately extended.",
+  8:"Fluent with only very occasional repetition or self-correction. Hesitation may occasionally be used to find words or grammar, but most will be content related. Topic development is coherent, appropriate and relevant.",
+  7:"Able to keep going and readily produce long turns without noticeable effort. Some hesitation, repetition and/or self-correction may occur, often mid-sentence and indicate problems with accessing appropriate language. However, these will not affect coherence. Flexible use of spoken discourse markers, connectives and cohesive features.",
+  6:"Able to keep going and demonstrates a willingness to produce long turns. Coherence may be lost at times as a result of hesitation, repetition and/or self-correction. Uses a range of spoken discourse markers, connectives and cohesive features though not always appropriately.",
+  5:"Usually able to keep going, but relies on repetition and self-correction to do so and/or on slow speech. Hesitations are often associated with mid-sentence searches for fairly basic lexis and grammar. Overuse of certain discourse markers, connectives and other cohesive features. More complex speech usually causes disfluency but simpler language may be produced fluently.",
+  4:"Unable to keep going without noticeable pauses. Speech may be slow with frequent repetition. Often self-corrects. Can link simple sentences but often with repetitious use of connectives. Some breakdowns in coherence.",
+  3:"Frequent, sometimes long, pauses occur while candidate searches for words. Limited ability to link simple sentences and go beyond simple responses to questions. Frequently unable to convey basic message.",
+  2:"Lengthy pauses before nearly every word. Isolated words may be recognisable but speech is of virtually no communicative significance.",
+  1:"Essentially none. Speech is totally incoherent."},
+ lr:{9:"Total flexibility and precise use in all contexts. Sustained use of accurate and idiomatic language.",
+  8:"Wide resource, readily and flexibly used to discuss all topics and convey precise meaning. Skilful use of less common and idiomatic items despite occasional inaccuracies in word choice and collocation. Effective use of paraphrase as required.",
+  7:"Resource flexibly used to discuss a variety of topics. Some ability to use less common and idiomatic items and an awareness of style and collocation is evident though inappropriacies occur. Effective use of paraphrase as required.",
+  6:"Resource sufficient to discuss topics at length. Vocabulary use may be inappropriate but meaning is clear. Generally able to paraphrase successfully.",
+  5:"Resource sufficient to discuss familiar and unfamiliar topics but there is limited flexibility. Attempts paraphrase but not always with success.",
+  4:"Resource sufficient for familiar topics but only basic meaning can be conveyed on unfamiliar topics. Frequent inappropriacies and errors in word choice. Rarely attempts paraphrase.",
+  3:"Resource limited to simple vocabulary used primarily to convey personal information. Vocabulary inadequate for unfamiliar topics.",
+  2:"Very limited resource. Utterances consist of isolated words or memorised utterances. Little communication possible without the support of mime or gesture.",
+  1:"No resource bar a few isolated words. No communication possible."},
+ gra:{9:"Structures are precise and accurate at all times, apart from ‘mistakes’ characteristic of native speaker speech.",
+  8:"Wide range of structures, flexibly used. The majority of sentences are error free. Occasional inappropriacies and non-systematic errors occur. A few basic errors may persist.",
+  7:"A range of structures flexibly used. Error-free sentences are frequent. Both simple and complex sentences are used effectively despite some errors. A few basic errors persist.",
+  6:"Produces a mix of short and complex sentence forms and a variety of structures with limited flexibility. Though errors frequently occur in complex structures, these rarely impede communication.",
+  5:"Basic sentence forms are fairly well controlled for accuracy. Complex structures are attempted but these are limited in range, nearly always contain errors and may lead to the need for reformulation.",
+  4:"Can produce basic sentence forms and some short utterances are error-free. Subordinate clauses are rare and, overall, turns are short, structures are repetitive and errors are frequent.",
+  3:"Basic sentence forms are attempted but grammatical errors are numerous except in apparently memorised utterances.",
+  2:"No evidence of basic sentence forms.",
+  1:"No rateable language unless memorised."},
+ pron:{9:"Uses a full range of phonological features to convey precise and/or subtle meaning. Flexible use of features of connected speech is sustained throughout. Can be effortlessly understood throughout. Accent has no effect on intelligibility.",
+  8:"Uses a wide range of phonological features to convey precise and/or subtle meaning. Can sustain appropriate rhythm. Flexible use of stress and intonation across long utterances, despite occasional lapses. Can be easily understood throughout. Accent has minimal effect on intelligibility.",
+  7:"Displays all the positive features of band 6, and some, but not all, of the positive features of band 8.",
+  6:"Uses a range of phonological features, but control is variable. Chunking is generally appropriate, but rhythm may be affected by a lack of stress-timing and/or a rapid speech rate. Some effective use of intonation and stress, but this is not sustained. Individual words or phonemes may be mispronounced but this causes only occasional lack of clarity. Can generally be understood throughout without much effort.",
+  5:"Displays all the positive features of band 4, and some, but not all, of the positive features of band 6.",
+  4:"Uses some acceptable phonological features, but the range is limited. Produces some acceptable chunking, but there are frequent lapses in overall rhythm. Attempts to use intonation and stress, but control is limited. Individual words or phonemes are frequently mispronounced, causing lack of clarity. Understanding requires some effort and there may be patches of speech that cannot be understood.",
+  3:"Displays some features of band 2, and some, but not all, of the positive features of band 4.",
+  2:"Uses few acceptable phonological features (possibly because sample is insufficient). Overall problems with delivery impair attempts at connected speech. Individual words and phonemes are mainly mispronounced and little meaning is conveyed. Often unintelligible.",
+  1:"Can produce occasional individual words and phonemes that are recognisable, but no overall meaning is conveyed. Unintelligible."}
+};
+function renderDescTable(){
+  const head = `<thead><tr><th>Band</th>${CRIT.map(c => `<th>${c.name}</th>`).join("")}</tr></thead>`;
+  const rows = bands => bands.map(b => `<tr><td>${b}</td>${CRIT.map(c => `<td>${DESC[c.k][b]}</td>`).join("")}</tr>`).join("");
+  $("descTable").innerHTML = head + "<tbody>" + rows([9,8,7,6,5,4]) + "</tbody>";
+  $("descTableLow").innerHTML = head + "<tbody>" + rows([3,2,1]) + `<tr><td>0</td><td colspan="4">Does not attend / does not complete the test.</td></tr></tbody>`;
+}
+renderDescTable();
+
+/* ---------- speech recognition (transcription) ---------- */
+function makeASR(){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return null;
+  let r = null, on = false, finals = [], interim = "", confs = [], pauses = 0, last = 0, doneIdx = 0, seen = 0, endResolve = null;
+  const api = {onLive:null, onFail:null, error:null};
+  function create(){
+    r = new SR(); r.lang = "en-GB"; r.continuous = true; r.interimResults = true; r.maxAlternatives = 1;
+    doneIdx = 0; seen = 0;
+    r.onresult = e => {
+      const now = Date.now();
+      if (last && now - last > 2500) pauses++;
+      last = now; interim = ""; seen = e.results.length;
+      for (let i = e.resultIndex; i < e.results.length; i++){
+        const res = e.results[i];
+        if (res.isFinal){ if (i >= doneIdx){ finals.push(res[0].transcript.trim()); if (res[0].confidence > 0) confs.push(res[0].confidence); doneIdx = i + 1; } }
+        else if (i >= doneIdx) interim += res[0].transcript;
+      }
+      api.onLive && api.onLive((finals.join(" ") + " " + interim).trim());
+    };
+    r.onerror = e => {
+      if (e.error === "not-allowed" || e.error === "service-not-allowed" || e.error === "audio-capture"){
+        on = false; api.error = e.error; api.onFail && api.onFail(e.error);
+      }
+    };
+    r.onend = () => {
+      if (on){ try { create(); r.start(); } catch(x){} }
+      else if (endResolve){ endResolve(); endResolve = null; }
+    };
+  }
+  api.start = () => { on = true; api.error = null; finals = []; interim = ""; confs = []; pauses = 0; last = 0; create(); try { r.start(); } catch(e){ on = false; api.error = "start"; return false; } return true; };
+  api.take = () => {
+    const out = {text:[...finals, interim].join(" ").replace(/\s+/g," ").trim(), conf:confs.slice(), pauses};
+    finals = []; interim = ""; confs = []; pauses = 0; last = 0; doneIdx = seen;
+    return out;
+  };
+  api.stop = () => new Promise(res => {
+    if (!on || !r){ on = false; return res(); }
+    on = false; endResolve = res;
+    try { r.stop(); } catch(e){ res(); }
+    setTimeout(() => { if (endResolve){ endResolve = null; res(); } }, 1500);
+  });
+  api.abort = () => { on = false; try { r && r.abort(); } catch(e){} };
+  return api;
+}
+const ASR_MISSING = "This browser can’t transcribe speech (try Chrome or Edge). Type what you said, then grade it.";
+const ASR_BLOCKED = "The microphone is blocked here, so your speech can’t be transcribed. Type what you said, then grade it.";
+
+/* ---------- grading ---------- */
+let samplerP = null;
+function getSampler(){
+  if (!samplerP) samplerP = (async () => { try { return window.claude ? await window.claude.use("sample") : null; } catch(e){ return null; } })();
+  return samplerP;
+}
+getSampler();
+
+function overallBand(bands){
+  const v = bands.filter(b => typeof b === "number");
+  if (!v.length) return null;
+  const avg = v.reduce((a,b) => a+b, 0) / v.length;
+  const f = Math.floor(avg), fr = avg - f;
+  return fr < 0.25 ? f : fr < 0.75 ? f + 0.5 : f + 1;
+}
+function descText(){
+  return CRIT.map(c => `${c.name.toUpperCase()}\n` + [9,8,7,6,5,4,3,2,1].map(b => `Band ${b}: ${DESC[c.k][b]}`).join("\n")).join("\n\n");
+}
+function buildPrompt(items, spoken, single){
+  const data = items.map((x,i) => ({n:i+1, question:x.q, response:x.text || "(no answer)", seconds:x.seconds || null, longPausesOver2_5s: spoken ? (x.pauses ?? null) : null, recognitionConfidence: spoken && x.conf && x.conf.length ? +(x.conf.reduce((a,b)=>a+b,0)/x.conf.length).toFixed(2) : null}));
+  return `You are an experienced, strict but fair IELTS Speaking examiner. Grade this candidate's IELTS Speaking Part 1 ${single ? "answer" : "performance"} against the official band descriptors below.
+
+Rules:
+- Give each criterion a whole band from 1 to 9. A candidate must fully fit the positive features of a band to be awarded it; if they show only some features of a higher band, award the lower band.
+- ${spoken ? "Responses are automatic speech-recognition transcripts. The machine added any punctuation and capitals, so ignore them. Do not penalise obvious recognition errors (homophones, a dropped small word); judge what the speaker most likely said. Use seconds and long pauses as fluency evidence." : "Responses were typed by the candidate in place of speech. Judge them as spoken English, not as writing; do not reward or penalise punctuation or spelling."}
+- Part 1 answers should be about 2–4 sentences (20–35 seconds). Very short answers give limited evidence and cannot reach high bands for fluency, vocabulary or grammar. Answers that ignore the question limit coherence.
+- ${spoken ? "Pronunciation: you cannot hear the audio. Estimate it cautiously from recognition confidence and how cleanly the speech was recognised (garbled or nonsense words suggest unclear pronunciation). Do not award above band 7 on this evidence, and say it is an estimate." : "Pronunciation cannot be judged without audio, so set \"pron\" to null."}
+- In "why", link the candidate's language to the wording of the descriptor. In "evidence", quote a short phrase the candidate actually said.
+- Be specific, honest and encouraging. Write for an English learner: clear, simple sentences.
+
+BAND DESCRIPTORS
+${descText()}
+
+CANDIDATE RESPONSES (JSON)
+${JSON.stringify(data, null, 1)}
+
+Reply with only a JSON object, no other text, in exactly this shape:
+{"fc":{"band":6,"why":"","evidence":""},"lr":{"band":6,"why":"","evidence":""},"gra":{"band":6,"why":"","evidence":""},"pron":${spoken ? '{"band":6,"why":"","evidence":""}' : "null"},"strengths":["up to 3 items"],"improve":["up to 3 specific, actionable tips"],"corrections":[{"said":"exact words with an error","better":"corrected version"}],"perQuestion":${single ? "[]" : '[{"n":1,"note":"one short sentence of feedback"}]'},"upgrade":"${single ? "the candidate's own answer rewritten at Band 8, keeping their ideas, 2–4 sentences, with new or upgraded phrases wrapped in [[double square brackets]]" : ""}"}
+Give at most 4 corrections, only for real errors.`;
+}
+
+/* Offline fallback: rough rule-based estimate when Claude can't be reached */
+const BAND_PHRASES = Array.from(new Set(TOPICS.flatMap(t => t.qs.flatMap(qa => (qa[1].match(/\[\[(.+?)\]\]/g) || []).map(m => m.slice(2,-2).toLowerCase().replace(/’/g,"'"))))));
+function heuristicGrade(items, spoken){
+  const all = items.map(x => x.text || "").join(" ");
+  const low = " " + all.toLowerCase().replace(/[’]/g,"'") + " ";
+  const words = all.split(/\s+/).filter(Boolean);
+  const n = items.length;
+  const avgW = words.length / n;
+  const uniq = new Set(words.map(w => w.toLowerCase().replace(/[^a-z']/g,""))).size / Math.max(1, words.length);
+  const link = LINKERS.filter(l => new RegExp("\\b"+l.replace(/ /g,"\\s+")+"\\b").test(low)).length;
+  const complex = (low.match(/\b(which|who|whereas|although|though|unless|if|since|would|could|have been|has been|had|used to|rather than)\b/g) || []).length / n;
+  const longW = words.filter(w => w.replace(/[^a-z]/gi,"").length >= 8).length / Math.max(1, words.length);
+  const idioms = BAND_PHRASES.filter(p => low.includes(p)).length;
+  const pauses = spoken ? items.reduce((a,x) => a + (x.pauses || 0), 0) / n : 0;
+  const clamp = b => Math.max(3, Math.min(8, Math.round(b)));
+  let fc = 4 + (avgW >= 20) + (avgW >= 35) + (link >= 2) + (link >= 4) - (pauses >= 2) - (avgW > 110);
+  let lr = 4 + (avgW >= 20) + (uniq > 0.55) + (longW > 0.1) + (idioms >= 1) + (idioms >= 3 ? 0.5 : 0);
+  let gra = 4 + (avgW >= 20) + (complex >= 1) + (complex >= 2.5) + (link >= 3 ? 0.5 : 0);
+  const conf = spoken ? items.flatMap(x => x.conf || []) : [];
+  const avgConf = conf.length ? conf.reduce((a,b)=>a+b,0)/conf.length : null;
+  const pron = spoken && avgConf != null ? clamp(4 + (avgConf > 0.6) + (avgConf > 0.75) + (avgConf > 0.88)) : null;
+  const tip = [];
+  if (avgW < 30) tip.push("Your answers are short. Add a reason and an example to each one.");
+  if (link < 3) tip.push("Use more linking language: because, although, whereas, that said.");
+  if (complex < 1.5) tip.push("Add complex sentences, such as relative clauses (which…) or conditionals (If I could…, I’d…).");
+  if (idioms < 1) tip.push("Try borrowing one or two highlighted phrases from the model answers.");
+  const w = "Rough rule-based estimate from length, linking words and sentence variety.";
+  return {rough:true,
+    fc:{band:clamp(fc), why:w, evidence:""}, lr:{band:clamp(lr), why:"Rough estimate from vocabulary variety, longer words and idiomatic phrases.", evidence:""},
+    gra:{band:clamp(gra), why:"Rough estimate from the number of complex structures. Accuracy can’t be checked offline.", evidence:""},
+    pron: pron == null ? null : {band:pron, why:"Rough estimate from how confidently your speech was recognised.", evidence:""},
+    strengths: [], improve: tip.slice(0,3), corrections: [], perQuestion: [], upgrade: ""};
+}
+
+async function grade(items, spoken, single){
+  const sample = await getSampler();
+  if (!sample) return heuristicGrade(items, spoken);
+  try {
+    const r = await sample.json(buildPrompt(items, spoken, single), {modelTier:"default"});
+    if (!r || !r.fc || !r.lr || !r.gra) throw {code:"invalid_json"};
+    if (!spoken) r.pron = null;
+    return r;
+  } catch(e){
+    const out = heuristicGrade(items, spoken);
+    out.fallbackReason = e && e.code === "not_granted" ? "You didn’t allow this page to use Claude, so this is a rough offline estimate instead."
+      : e && e.code === "rate_limited" ? "Claude is busy or your usage limit was reached, so this is a rough offline estimate. Try again in a few minutes."
+      : "The detailed grader couldn’t be reached, so this is a rough offline estimate.";
+    return out;
+  }
+}
+const safe = s => fmt(esc(String(s ?? "")));
+function renderReport(el, r, spoken){
+  const bands = CRIT.map(c => r[c.k] && typeof r[c.k].band === "number" ? Math.max(1, Math.min(9, Math.round(r[c.k].band))) : null);
+  const overall = overallBand(bands);
+  const critHTML = CRIT.map((c,i) => {
+    const b = bands[i], x = r[c.k];
+    if (b == null) return `<div class="crit"><div class="band">–</div><div><h4>${c.name}</h4><p>Not assessed: typed answers have no audio. Speak your answer to get a pronunciation estimate.</p></div></div>`;
+    return `<div class="crit"><div class="band">${b}</div><div><h4>${c.name}${c.k === "pron" ? " (estimate)" : ""}</h4>
+      <p>${safe(x.why)}</p>${x.evidence ? `<p class="ev">“${esc(String(x.evidence).replace(/'/g,"’"))}”</p>` : ""}
+      <details><summary>What band ${b} means</summary><p>${DESC[c.k][b]}</p>${b < 9 ? `<p><b>To reach band ${b+1}:</b> ${DESC[c.k][b+1]}</p>` : ""}</details></div></div>`;
+  }).join("");
+  const list = (t, a) => a && a.length ? `<h4 style="margin:1rem 0 .2rem">${t}</h4><ul>${a.map(s => `<li>${safe(s)}</li>`).join("")}</ul>` : "";
+  const fixes = r.corrections && r.corrections.length ? `<h4 style="margin:1rem 0 .2rem">Corrections</h4>` + r.corrections.map(c => `<p class="fix"><s>${esc(String(c.said||"").replace(/'/g,"’"))}</s> → <b>${esc(String(c.better||"").replace(/'/g,"’"))}</b></p>`).join("") : "";
+  const perQ = r.perQuestion && r.perQuestion.length ? `<h4 style="margin:1rem 0 .2rem">Question by question</h4><ul>${r.perQuestion.map(p => `<li><b>Q${esc(String(p.n))}:</b> ${safe(p.note)}</li>`).join("")}</ul>` : "";
+  const up = r.upgrade ? `<h4 style="margin:1rem 0 .2rem">Your answer at Band 8</h4><p class="a open">${safe(r.upgrade)}</p>` : "";
+  el.innerHTML = `<div class="report">
+    <div class="overall"><span class="big">${overall == null ? "–" : overall.toFixed(1)}</span><span class="lbl">estimated band${bands[3] == null ? " (from 3 criteria; pronunciation not assessed)" : ""}</span></div>
+    ${critHTML}${list("What you did well", r.strengths)}${list("How to improve", r.improve)}${fixes}${perQ}${up}
+    <p class="caveat">${r.fallbackReason ? esc(r.fallbackReason) + " " : ""}${r.rough ? "Rule-based estimates are less reliable than examiner-style grading. " : ""}This grade is an estimate against the IELTS Speaking band descriptors, based on ${spoken ? "a speech-recognition transcript (the grader can’t hear your voice, so pronunciation is only estimated)" : "typed text"}. The real test scores all three parts together.</p>
+  </div>`;
+  return overall;
+}
+function showGrading(el){ el.innerHTML = `<div class="grading"><span class="spin"></span>Grading against the band descriptors… this usually takes 10–40 seconds.</div>`; }
+
+/* ---------- mock test ---------- */
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+let M = null;
+const mockTimer = makeTimer($("mockTime"), $("mockFill"), $("mockHint"));
+const mockRec = makeRecorder();
+const mockASR = makeASR();
+
+$("mockStart").onclick = async () => {
+  const first = shuffle(TOPICS.filter(t => t.intro))[0];
+  const others = shuffle(TOPICS.filter(t => !t.intro)).slice(0,2);
+  const qs = [];
+  [first, ...others].forEach((t,k) => {
+    const n = k < 2 ? 4 : 3 + Math.round(Math.random());
+    t.qs.slice(0,n).forEach((qa,i) => qs.push({tid:t.id, topic:t.title, q:qa[0].replace(/'/g,"’"), a:qa[1], first:i===0, seconds:0, text:"", pauses:0, conf:[]}));
+  });
+  M = {qs, i:-1, speak:$("optSpeak").checked, rec:$("optRec").checked, tr:$("optTr").checked, audio:null, spoken:false};
+  $("mockSetup").hidden = true; $("mockReview").hidden = true; $("mockRun").hidden = false;
+  $("mockStatus").textContent = ""; $("mockLive").textContent = ""; $("mockBar").style.width = "0";
+  const notes = [];
+  if (M.tr){
+    if (!mockASR){ M.tr = false; notes.push(ASR_MISSING); }
+    else {
+      mockASR.onLive = t => { $("mockLive").textContent = t ? "Hearing: " + t.slice(-160) : ""; };
+      mockASR.onFail = () => { M.tr = false; $("mockStatus").textContent = ASR_BLOCKED; $("mockLive").textContent = ""; };
+      if (mockASR.start()) M.spoken = true; else { M.tr = false; notes.push(ASR_BLOCKED); }
+    }
+  }
+  if (M.rec){
+    try { await mockRec.start(); notes.push("Recording audio."); }
+    catch(e){ M.rec = false; notes.push(REC_FAIL); }
+  }
+  if (M.tr) notes.unshift("Transcribing your answers.");
+  $("mockStatus").textContent = notes.join(" ");
+  $("mockTopic").textContent = "Introduction";
+  const opening = "Good morning. My name is Sarah, and I’ll be your examiner today. Can you tell me your full name, please?";
+  $("mockQ").textContent = opening;
+  $("mockNext").textContent = "Start Part 1";
+  mockTimer.reset();
+  if (M.speak) say(opening);
+};
+function showMock(){
+  const x = M.qs[M.i];
+  $("mockBar").style.width = ((M.i+1)/M.qs.length*100)+"%";
+  $("mockTopic").textContent = `Question ${M.i+1} of ${M.qs.length} · ${x.topic}`;
+  const lead = x.first ? (M.i === 0 ? "In this first part, I’d like to ask you some questions about yourself. " : `Now, let’s talk about ${x.topic.toLowerCase()}. `) : "";
+  $("mockQ").textContent = lead + x.q;
+  $("mockNext").textContent = M.i === M.qs.length-1 ? "Finish test" : "Next question";
+  $("mockLive").textContent = "";
+  if (M.tr) mockASR.take();
+  mockTimer.start();
+  if (M.speak) say(lead + x.q);
+}
+function captureMock(){
+  if (M.i < 0) { if (M.tr) mockASR.take(); return; }
+  const x = M.qs[M.i];
+  x.seconds = mockTimer.stop();
+  if (M.tr){ const t = mockASR.take(); x.text = t.text; x.pauses = t.pauses; x.conf = t.conf; }
+}
+$("mockNext").onclick = () => {
+  if (!M) return;
+  captureMock();
+  if (M.i === M.qs.length-1) return finishMock();
+  M.i++; showMock();
+};
+$("mockRepeat").onclick = () => { if (M && M.speak) say($("mockQ").textContent); };
+$("mockEnd").onclick = async () => {
+  if (!M) return;
+  if (M.tr && M.i >= 0){ M.qs[M.i].seconds = mockTimer.stop(); await mockASR.stop(); const t = mockASR.take(); Object.assign(M.qs[M.i], {text:t.text, pauses:t.pauses, conf:t.conf}); }
+  else captureMock();
+  finishMock(true);
+};
+async function finishMock(stopped){
+  mockTimer.stop();
+  try { speechSynthesis.cancel(); } catch(e) {}
+  if (M.tr && !stopped){ await mockASR.stop(); }
+  if (M.rec) M.audio = await mockRec.stop();
+  const answered = M.qs.filter(q => q.seconds > 0);
+  const good = answered.filter(q => q.seconds >= 20 && q.seconds <= 35).length;
+  const short = answered.filter(q => q.seconds < 15).length;
+  $("mockSummary").textContent = answered.length
+    ? `You answered ${answered.length} question${answered.length>1?"s":""}. ${good} were in the ideal 20–35 second range` + (short ? `, and ${short} were under 15 seconds. Short answers usually need a reason or an example.` : ".")
+    : "You ended the test before answering any questions.";
+  $("mockAudio").innerHTML = M.audio ? `<p style="margin:.4rem 0 0"><b>Listen back to your test</b></p><audio controls src="${M.audio}"></audio>` : "";
+  $("mockReport").innerHTML = "";
+  $("mockItems").innerHTML = M.qs.map((x,i) => `
+    <div class="item">
+      <p class="meta">Q${i+1} · ${x.topic} · ${x.seconds ? x.seconds+" seconds" : "not answered"}</p>
+      <p class="q">${esc(x.q)}</p>
+      <label class="meta" for="mt-${i}">Your answer${M.spoken ? " (transcript)" : ""}</label>
+      <textarea id="mt-${i}" data-i="${i}" placeholder="${M.spoken ? "Nothing was transcribed. Type what you said." : "Type what you said."}">${esc(x.text || "")}</textarea>
+      <details style="margin-top:.5rem"><summary>Model answer</summary><p class="a open">${fmt(x.a)}</p></details>
+    </div>`).join("");
+  $("mockItems").querySelectorAll("textarea").forEach(t => t.addEventListener("input", () => { M.qs[+t.dataset.i].text = t.value; }));
+  $("mockRun").hidden = true; $("mockReview").hidden = false;
+  window.scrollTo(0,0);
+}
+$("mockGrade").onclick = async () => {
+  const items = M.qs.filter(x => (x.text || "").trim());
+  if (items.length < 2){ $("mockReport").innerHTML = `<p class="status" style="color:var(--warn)">Add at least two answers below (spoken or typed) so there’s enough evidence to grade.</p>`; return; }
+  $("mockGrade").disabled = true; showGrading($("mockReport"));
+  const r = await grade(items, M.spoken, false);
+  if (r.perQuestion){ r.perQuestion = r.perQuestion.map(p => { const x = items[p.n-1]; const real = x ? M.qs.indexOf(x)+1 : p.n; return {...p, n: real}; }); }
+  const o = renderReport($("mockReport"), r, M.spoken);
+  if (o != null){ store.mocks = (store.mocks || []).concat([{at:Date.now(), band:o}]).slice(-20); save(); renderProgress(); }
+  $("mockGrade").disabled = false; $("mockGrade").textContent = "Grade again";
+};
+$("mockAgain").onclick = () => { $("mockReview").hidden = true; $("mockSetup").hidden = false; $("mockGrade").textContent = "Grade my test"; };
+
+/* ---------- self-practice ---------- */
+let P = null;
+const pTimer = makeTimer($("pTime"), $("pFill"), $("pHint"));
+const pRec = makeRecorder();
+const pASR = makeASR();
+let pActive = false;
+$("pTopic").innerHTML = `<option value="all">All topics</option>` + TOPICS.map(t => `<option value="${t.id}">${t.title}</option>`).join("");
+function pickPractice(id){
+  if (pActive) return;
+  if (!id){
+    const sel = $("pTopic").value;
+    let pool = ALLQ.filter(q => sel === "all" || q.tid === sel);
+    const notCur = pool.filter(q => !P || q.id !== P.id);
+    const fresh = notCur.filter(q => !store.done[q.id]);
+    pool = fresh.length ? fresh : notCur.length ? notCur : pool;
+    P = pool[Math.floor(Math.random()*pool.length)];
+  } else P = ALLQ.find(q => q.id === id);
+  P.metrics = null;
+  $("pTopicLine").textContent = P.topic;
+  $("pQ").textContent = P.q;
+  $("pDraft").value = store.notes[P.id] || "";
+  $("pModelText").innerHTML = fmt(P.a); $("pModelText").classList.remove("open");
+  $("pModel").textContent = "Compare with model answer";
+  $("pAudio").innerHTML = ""; $("pStatus").textContent = ""; $("pLive").textContent = ""; $("pReport").innerHTML = "";
+  pTimer.reset();
+  document.querySelectorAll("[data-c]").forEach(c => c.checked = false); score();
+  $("pDone").textContent = store.done[P.id] ? "Practised ✓" : "Mark as practised";
+  analyse();
+}
+$("pNew").onclick = () => pickPractice();
+$("pTopic").onchange = () => pickPractice();
+$("pListen").onclick = () => { if (!say(P.q)) $("pStatus").textContent = "Your browser can’t read text aloud. Read the question instead."; };
+$("pSpeak").onclick = async () => {
+  if (!pActive){
+    pActive = true;
+    $("pSpeak").textContent = "Stop answering"; $("pSpeak").classList.add("rec","live");
+    $("pReport").innerHTML = ""; $("pLive").textContent = "";
+    const notes = [];
+    let asrOn = false;
+    if (!pASR) notes.push(ASR_MISSING);
+    else {
+      pASR.onLive = t => { $("pLive").textContent = t; };
+      pASR.onFail = () => { $("pStatus").textContent = ASR_BLOCKED; };
+      asrOn = pASR.start(); if (!asrOn) notes.push(ASR_BLOCKED);
+    }
+    try { await pRec.start(); } catch(e){ if (!asrOn) notes.push("Audio recording isn’t available either."); }
+    pTimer.start();
+    $("pStatus").textContent = notes.length ? notes.join(" ") : "Listening… answer the question aloud, then press Stop.";
+    P._asr = asrOn;
+  } else {
+    pActive = false;
+    $("pSpeak").textContent = "Answer again"; $("pSpeak").classList.remove("rec","live");
+    const seconds = pTimer.stop();
+    let t = {text:"", pauses:0, conf:[]};
+    if (P._asr && pASR){ await pASR.stop(); t = pASR.take(); }
+    const url = pRec.live ? await pRec.stop() : null;
+    $("pAudio").innerHTML = url ? `<audio controls src="${url}"></audio>` : "";
+    $("pLive").textContent = "";
+    if (t.text){
+      $("pDraft").value = t.text; P.metrics = {seconds, pauses:t.pauses, conf:t.conf, spoken:true};
+      $("pStatus").textContent = `You spoke for ${seconds} seconds. Check the transcript, fix any recognition mistakes, then grade your answer.`;
+    } else {
+      P.metrics = {seconds, pauses:0, conf:[], spoken:false};
+      $("pStatus").textContent = `You spoke for ${seconds} seconds. ${P._asr ? "No speech was transcribed." : ""} Type what you said in the box, then grade your answer.`;
+    }
+    analyse();
+  }
+};
+$("pGrade").onclick = async () => {
+  const text = $("pDraft").value.trim();
+  if (text.split(/\s+/).filter(Boolean).length < 3){ $("pReport").innerHTML = `<p class="status" style="color:var(--warn)">Answer the question first: speak it with “Start answering” or type it in the box.</p>`; return; }
+  const m = P.metrics || {spoken:false};
+  const spoken = !!m.spoken;
+  $("pGrade").disabled = true; showGrading($("pReport"));
+  const r = await grade([{q:P.q, text, seconds:m.seconds || null, pauses:m.pauses, conf:m.conf}], spoken, true);
+  const o = renderReport($("pReport"), r, spoken);
+  if (o != null){ store.grades = store.grades || {}; store.grades[P.id] = o; store.done[P.id] = true; save(); renderProgress(); renderBook(); $("pDone").textContent = "Practised ✓"; }
+  $("pGrade").disabled = false;
+};
+const LINKERS = ["because","since","although","though","whereas","while","however","that said","having said that","on the whole","to be honest","actually","especially","particularly","for example","for instance","which","as well","it depends","rather than","apart from","so","but","if","when","unless","provided"];
+function analyse(){
+  const txt = $("pDraft").value.trim();
+  if (P) { store.notes[P.id] = $("pDraft").value; save(); }
+  if (!txt){ $("pFeedback").innerHTML = ""; return; }
+  const words = txt.split(/\s+/).filter(Boolean).length;
+  const low = " " + txt.toLowerCase().replace(/[’']/g,"'") + " ";
+  const found = LINKERS.filter(l => new RegExp("\\b"+l.replace(/ /g,"\\s+")+"\\b").test(low));
+  let msg = words < 30 ? `<span style="color:var(--warn)">${words} words: a little short. Add a reason or an example.</span>`
+          : words > 90 ? `<span style="color:var(--warn)">${words} words: long for Part 1. Aim for 2–4 sentences.</span>`
+          : `<span style="color:var(--good)">${words} words: a good Part 1 length.</span>`;
+  msg += `<br>Linking language: ${found.length ? found.map(f => `<span class="chip">${f}</span>`).join("") : "<i>none found yet. Try because, although or that said.</i>"}`;
+  $("pFeedback").innerHTML = msg;
+}
+$("pDraft").addEventListener("input", () => { if (P && P.metrics && !P.metrics.spoken && !pActive) {} analyse(); });
+$("pModel").onclick = () => {
+  const m = $("pModelText"); m.classList.toggle("open");
+  $("pModel").textContent = m.classList.contains("open") ? "Hide model answer" : "Compare with model answer";
+};
+$("pDone").onclick = () => {
+  store.done[P.id] = !store.done[P.id]; save();
+  $("pDone").textContent = store.done[P.id] ? "Practised ✓" : "Mark as practised";
+  renderProgress(); renderBook();
+};
+function score(){
+  const n = [...document.querySelectorAll("[data-c]")].filter(c => c.checked).length;
+  const band = n === 0 ? null : n <= 2 ? "around Band 5" : n <= 4 ? "around Band 6" : n <= 6 ? "around Band 7" : "around Band 7.5–8";
+  $("pScore").textContent = band ? `${n} of 8: ${band}. Use “Grade my answer” for a descriptor-based grade.` : "Tick the boxes to check yourself.";
+}
+document.querySelectorAll("[data-c]").forEach(c => c.addEventListener("change", score));
+function renderProgress(){
+  const total = Object.values(store.done).filter(Boolean).length;
+  const g = Object.values(store.grades || {});
+  const avg = g.length ? overallBand([g.reduce((a,b)=>a+b,0)/g.length]) : null;
+  const mocks = store.mocks || [];
+  $("pTotal").innerHTML = `${total} of ${ALLQ.length} questions practised` +
+    (g.length ? `<br>Average graded band: <b>${(g.reduce((a,b)=>a+b,0)/g.length).toFixed(1)}</b> across ${g.length} answer${g.length>1?"s":""}` : "") +
+    (mocks.length ? `<br>Last mock test: <b>${mocks[mocks.length-1].band.toFixed(1)}</b>` : "");
+  $("pBars").innerHTML = TOPICS.map(t => {
+    const d = t.qs.filter((_,j) => store.done[t.id+"-"+j]).length;
+    return `<div class="b">${t.title} <span style="float:right;color:var(--muted)">${d}/4</span><div class="track"><span style="width:${d/4*100}%"></span></div></div>`;
+  }).join("");
+}
+$("pReset").onclick = () => {
+  if (!confirm("Clear all practised marks, grades and saved answers?")) return;
+  store = {done:{}, notes:{}, grades:{}, mocks:[]}; save(); renderProgress(); renderBook(); pickPractice(P && P.id);
+};
+
+/* routing */
+const VIEWS = ["home","book","mock","practice"];
+function route(){
+  const h = location.hash.replace("#","");
+  const v = VIEWS.includes(h) ? h : "home";
+  VIEWS.forEach(x => $("view-"+x).classList.toggle("on", x === v));
+  document.querySelectorAll("nav.tabs a").forEach(a => { if (a.dataset.v === v) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", route);
+
+renderBook(); renderProgress(); pickPractice(); route();
+try { speechSynthesis.getVoices(); } catch(e) {}
+
+</script>
+</body>
+</html>
